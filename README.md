@@ -4,7 +4,7 @@ Welcome to Mi Card, the coolest digital business card in the Flutterverse! Say g
 
 ## 🌟 About This Project
 
-Mi Card is a simple yet elegant Flutter application that showcases a personal business card. It's a great beginner-friendly project that demonstrates the power of Flutter's UI toolkit to create beautiful, custom layouts. The app displays a profile picture, name, title, and contact information including phone, email, and a tappable link to a professional profile.
+Mi Card is a simple yet elegant Flutter application that showcases a personal business card. It's a great beginner-friendly project that demonstrates the power of Flutter's UI toolkit to create beautiful, custom layouts. The app displays a profile picture, name, title, and contact information, including phone, email, and a tappable link to a professional profile.
 
 ## ✨ Features
 
@@ -20,7 +20,7 @@ Show off your awesome business card here!
 
 | Android | iOS |
 | :---: | :---: |
-| <img src="images/Android.png" width="250">  | <img src="images/IOS.png" width="250">  |
+| <img src="images/Android.png" width="250" height="125%>  | <img src="images/IOS.png" width="250">  |
 
 ## 🚀 Getting Started
 

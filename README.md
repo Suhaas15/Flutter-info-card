@@ -20,7 +20,7 @@ Show off your awesome business card here!
 
 | Android | iOS |
 | :---: | :---: |
-| <img src="images/Android.png" width="250" height="125%">  | <img src="images/IOS.png" width="250">  |
+| <img src="images/Android.png" width="250" height="150%">  | <img src="images/IOS.png" width="250">  |
 
 ## 🚀 Getting Started
 

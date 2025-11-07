@@ -1,0 +1,37 @@
+pluginManagement {
+    def flutterSdkPath = {
+        def properties = new Properties()
+        file("local.properties").withInputStream { properties.load(it) }
+        def flutterSdkPath = properties.getProperty("flutter.sdk")
+        assert flutterSdkPath != null, "flutter.sdk not set in local.properties"
+        return flutterSdkPath
+    }()
+
+    includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
+
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+plugins {
+    id "dev.flutter.flutter-gradle-plugin" apply false
+    id "com.android.application" version "8.7.0" apply false
+}
+
+include ':app'
+
+// Include Flutter plugins
+def flutterPluginsFile = new File(rootProject.projectDir.parentFile, '.flutter-plugins-dependencies')
+if (flutterPluginsFile.exists()) {
+    def flutterPlugins = new groovy.json.JsonSlurper().parse(flutterPluginsFile)
+    flutterPlugins.plugins.android.each { plugin ->
+        def pluginPath = plugin.path
+        if (pluginPath != null && new File(pluginPath, 'android').exists()) {
+            include ":${plugin.name}"
+            project(":${plugin.name}").projectDir = new File(pluginPath, 'android')
+        }
+    }
+}

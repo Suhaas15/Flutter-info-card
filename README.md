@@ -20,7 +20,7 @@ Show off your awesome business card here!
 
 | Android | iOS |
 | :---: | :---: |
-| *Your Android Screenshot Here* | *Your iOS Screenshot Here* |
+| <img src="assets/screenshots/android.png" width="250">  | <img src="assets/screenshots/ios.png" width="250">  |
 
 ## 🚀 Getting Started
 
